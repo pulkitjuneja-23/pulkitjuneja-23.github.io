@@ -1,0 +1,6 @@
+# OS and sync cruft that must never reach the published site
+desktop.ini
+Thumbs.db
+.DS_Store
+*.tmp
+_shot_tmp.html

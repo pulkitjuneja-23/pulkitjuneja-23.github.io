@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulkit Juneja — Agronomy PhD | Field trials, remote sensing, crop modeling</title>
+<meta name="description" content="Pulkit Juneja is an Agronomy PhD student at Texas A&M integrating field trials, UAV remote sensing and simulation modeling in row crop systems.">
+<meta property="og:title" content="Pulkit Juneja">
+<meta property="og:description" content="Field trials · Remote sensing · Simulation modeling">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pulkitjuneja-23.github.io/">
+<meta property="og:image" content="https://pulkitjuneja-23.github.io/assets/img/photos/flyingdrone.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">
+    <img src="assets/img/headshot.jpg" alt="" width="34" height="34" onerror="this.remove()">
+    <span>Pulkit Juneja</span>
+  </a>
+  <nav class="topnav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#journey">Journey</a>
+  </nav>
+  <a class="top-cta" href="#contact">Contact</a>
+</header>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<aside class="rail" id="rail" aria-label="Page progress">
+  <div class="rail-track"><div class="rail-fill"></div><div class="rail-marks" id="rail-marks"></div></div>
+  <span class="rail-pct" id="rail-pct">0%</span>
+</aside>
+
+<!-- ===================== HERO (field scene: assets/js/tillage.js) ===================== -->
+<section class="hero" id="top">
+  <canvas id="till" aria-hidden="true"></canvas>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="identity">
+      <img class="hero-photo" src="assets/img/headshot.jpg" alt="Pulkit Juneja" width="120" height="120" onerror="this.remove()">
+      <div>
+        <p class="eyebrow">PhD Student · Agronomy · Texas A&amp;M University</p>
+        <h1>Pulkit Juneja</h1>
+      </div>
+    </div>
+    <p class="tagline">Field trials · Remote sensing · Simulation modeling</p>
+    <p class="creds">Corteva DELTA Scholar · Bayer B4U Mentee</p>
+    <p class="loc">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      Blackland Research &amp; Extension Center, Temple, TX
+    </p>
+    <ul class="hero-links" id="contact-links">
+      <li><a href="mailto:pulkit.juneja@tamu.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/pulkit-juneja">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=x8ZD-0EAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0001-9248-0934">ORCID</a></li>
+      <li><a href="https://github.com/pulkitjuneja-23">GitHub</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== STATS BAND ===================== -->
+<section class="stats-band" aria-label="Highlights">
+  <div class="wrap stats">
+    <div class="stat"><b>3</b><span>published papers &amp; book chapter</span></div>
+    <div class="stat"><b>9</b><span>conference presentations</span></div>
+    <div class="stat"><b>3</b><span>presentation awards</span></div>
+    <div class="stat"><b>100+</b><span>undergraduates taught</span></div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about" data-nav data-label="About">
+  <div class="wrap about-grid">
+    <h2 class="label">About</h2>
+    <p class="lead">I work across the whole chain of a row crop experiment: replicated trials on the ground, UAV LiDAR and hyperspectral sensing from the air, and DSSAT and DayCent simulations that extend a few seasons of measurements into decades of scenarios.</p>
+    <ul class="skills">
+      <li><b>Programming</b><span>Python (scikit-learn, pandas, NumPy) · R (tidyverse, lme4, metafor) · SQL · Git</span></li>
+      <li><b>Statistics</b><span>SAS · JMP · JASP · mixed models · meta-analysis</span></li>
+      <li><b>Geospatial &amp; remote sensing</b><span>ArcGIS Pro · ENVI · Pix4D · CloudCompare · UAV LiDAR and hyperspectral</span></li>
+      <li><b>Simulation models</b><span>DSSAT · DayCent</span></li>
+      <li><b>Field &amp; lab</b><span>Replicated trial design · eddy covariance · static chambers · gas chromatography</span></li>
+      <li><b>Certification</b><span>FAA Part 107 Remote Pilot Certificate</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section class="section" id="education" data-nav data-label="Education">
+  <div class="wrap">
+    <h2 class="label">Education</h2>
+    <div class="schools">
+      <article class="school">
+        <img class="school-logo" src="assets/img/logos/tamu.png" alt="Texas A&amp;M University logo" width="96" height="96">
+        <div>
+          <h3>Texas A&amp;M University</h3>
+          <span class="school-place">College Station, Texas</span>
+          <ol class="degrees">
+            <li><b>PhD, Agronomy</b><span class="when">2025 – present</span></li>
+            <li><b>MS, Agronomy</b><span class="when">2022 – 2024</span></li>
+          </ol>
+        </div>
+      </article>
+      <article class="school">
+        <img class="school-logo" src="assets/img/logos/pau.png" alt="Punjab Agricultural University logo" width="96" height="96">
+        <div>
+          <h3>Punjab Agricultural University</h3>
+          <span class="school-place">Ludhiana, Punjab, India</span>
+          <ol class="degrees">
+            <li><b>BSc, Agriculture</b><span class="when">2017 – 2021</span></li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section" id="projects" data-nav data-label="Projects">
+  <div class="wrap">
+    <h2 class="label">Projects</h2>
+
+    <!-- Showcase: scroll, click or swipe through the data chain (assets/js/levels.js) -->
+    <div class="levels" id="levels">
+      <div class="levels-frames" aria-hidden="true">
+        <figure class="photo"><img src="assets/img/photos/flyingdrone.jpg" alt="" style="object-position:50% 45%"></figure>
+        <figure class="photo"><img src="assets/img/photos/1-drone.jpg" alt="" loading="lazy"></figure>
+        <figure class="photo fit" style="--fw:72%"><img class="bg" src="assets/img/photos/laicollection.jpg" alt="" loading="lazy"><img src="assets/img/photos/laicollection.jpg" alt="" loading="lazy" style="object-position:50% 45%"></figure>
+        <figure class="photo"><img src="assets/img/photos/fluxtower2.jpg" alt="" loading="lazy" style="object-position:50% 45%"></figure>
+        <figure class="photo fit" style="--fw:40%"><img class="bg" src="assets/img/photos/greenhousegascollectionfromchambers.jpg" alt="" loading="lazy"><img src="assets/img/photos/greenhousegascollectionfromchambers.jpg" alt="" loading="lazy" style="object-position:50% 55%"></figure>
+        <figure class="photo"><img src="assets/img/photos/depsoilcorecollection.jpg" alt="" loading="lazy"></figure>
+      </div>
+      <div class="levels-shade" aria-hidden="true"></div>
+      <ol class="levels-gauge" role="tablist" aria-label="Where the data comes from">
+        <li role="presentation"><button role="tab" aria-selected="true"><span class="lv-dot"></span>UAV data collection</button></li>
+        <li role="presentation"><button role="tab" aria-selected="false"><span class="lv-dot"></span>From above</button></li>
+        <li role="presentation"><button role="tab" aria-selected="false"><span class="lv-dot"></span>Inside the canopy</button></li>
+        <li role="presentation"><button role="tab" aria-selected="false"><span class="lv-dot"></span>Above the crop</button></li>
+        <li role="presentation"><button role="tab" aria-selected="false"><span class="lv-dot"></span>At the surface</button></li>
+        <li role="presentation"><button role="tab" aria-selected="false"><span class="lv-dot"></span>Below ground</button></li>
+      </ol>
+      <div class="levels-caption" aria-live="polite">
+        <div class="lv-cap"><h3>DJI Matrice 300 RTK</h3><p>Integrating LiDAR and hyperspectral data to estimate corn leaf area index: cross-field transferability</p><a href="#case-lai">View project</a></div>
+        <div class="lv-cap" hidden><h3>Top view of the plot</h3><p>Integrating LiDAR and hyperspectral data to estimate corn leaf area index: cross-field transferability</p><a href="#case-lai">View project</a></div>
+        <div class="lv-cap" hidden><h3>LI-COR LAI-2200C</h3><p>Integrating LiDAR and hyperspectral data to estimate corn leaf area index: cross-field transferability</p><a href="#case-lai">View project</a></div>
+        <div class="lv-cap" hidden><h3>Eddy covariance tower</h3><p>Simulating net ecosystem exchange in no-till sorghum–cotton fields using DayCent and DSSAT</p><a href="#case-nee">View project</a></div>
+        <div class="lv-cap" hidden><h3>Static soil chamber</h3><p>Estimating greenhouse gas fluxes from corn fields with various cover crop and residue management practices</p><a href="#case-ghg">View project</a></div>
+        <div class="lv-cap" hidden><h3>Geoprobe MC5</h3><p>Impact of summer cover crops on corn yield and water use efficiency</p><a href="#case-cover">View project</a></div>
+      </div>
+    </div>
+
+    <!-- One row per project; details open underneath on click (assets/js/projects.js) -->
+    <div id="proj-grid">
+      <h3 class="proj-group-title">Current</h3>
+      <ol class="proj-list">
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-lai">
+            <span class="strand sky">Remote sensing</span>
+            <span class="proj-main"><span class="proj-title">Integrating LiDAR and hyperspectral data to estimate corn leaf area index: cross-field transferability</span><span class="proj-result">Fusion was most accurate within fields (R² = 0.75); LiDAR alone transferred better across fields</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-lai" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides">
+                <figure class="photo"><img src="assets/img/photos/dronecalibration.jpg" alt="Pulkit setting up a research drone and its calibration panel before a flight" loading="lazy" style="object-position:50% 22%"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">PhD project · manuscript in preparation</p>
+              <dl>
+                <dt>Problem</dt><dd>Spectral information saturates in dense canopies, and models built on it lose accuracy when transferred to a new location.</dd>
+                <dt>Approach</dt><dd>Integrate UAV-based LiDAR and hyperspectral information to evaluate their combined accuracy and model performance across locations.</dd>
+                <dt>Result</dt><dd>Fusion was the most accurate configuration within fields (R² = 0.75, RMSE = 0.41 m² m⁻²), while LiDAR alone transferred better across fields.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Python</span><ul class="badges"><li class="b-py">scikit-learn</li><li class="b-py">pandas</li><li class="b-py">NumPy</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Software</span><ul class="badges"><li class="b-rs">ENVI</li><li class="b-rs">Pix4D</li><li class="b-rs">CloudCompare</li><li class="b-rs">ArcGIS Pro</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Instruments</span><ul class="badges"><li class="b-field">DJI Matrice 300 RTK</li><li class="b-field">Freefly Astro</li><li class="b-field">LI-COR LAI-2200C</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-nee">
+            <span class="strand model">Modeling</span>
+            <span class="proj-main"><span class="proj-title">Simulating net ecosystem exchange in no-till sorghum–cotton fields using DayCent and DSSAT</span><span class="proj-result">Comparing DayCent and DSSAT simulations against eddy covariance flux tower measurements</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-nee" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides">
+                <figure class="photo"><img src="assets/img/photos/fluxtower.jpg" alt="Installing instruments on an eddy covariance flux tower" loading="lazy"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">PhD project · ongoing</p>
+              <dl>
+                <dt>Problem</dt><dd>The carbon budget of conservation practices depends on field-observed data, and long-term scenarios remain a question of interest.</dd>
+                <dt>Approach</dt><dd>Simulate net ecosystem exchange with DayCent and DSSAT, compare it against eddy covariance flux tower measurements from a no-till sorghum–cotton rotation, and extend the simulations to long-term scenarios.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Simulation models</span><ul class="badges"><li class="b-sim">DayCent</li><li class="b-sim">DSSAT</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Software</span><ul class="badges"><li class="b-stat">EddyPro</li><li class="b-r">R</li><li class="b-py">Python</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Instruments</span><ul class="badges"><li class="b-field">Eddy covariance tower</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-mulch">
+            <span class="strand field">Field trials</span>
+            <span class="proj-main"><span class="proj-title">Evaluating potential of living mulch within corn production systems of the southern United States</span><span class="proj-result">Crimson clover and fallow plots out-yielded white clover across all nitrogen rates</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-mulch" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides">
+                <figure class="photo"><img src="assets/img/photos/precisionplanting.jpg" alt="Planting research plots with a precision plot planter" loading="lazy" style="object-position:50% 55%"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">PhD project · ongoing · <a href="https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168233">CANVAS 2025 talk</a></p>
+              <dl>
+                <dt>Problem</dt><dd>The fallow period between successive crops leaves soil prone to deterioration, and winter crops grown in the southern United States struggle to produce enough biomass to cover it.</dd>
+                <dt>Approach</dt><dd>A field trial of a perennial ground cover with different nitrogen rates, tracking biomass, nitrogen credits, erosion and the yield of the following corn crop.</dd>
+                <dt>Result</dt><dd>Crimson clover and fallow plots generally produced higher corn yield than white clover, across nitrogen rates from 0 to 240 kg ha⁻¹.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Statistics</span><ul class="badges"><li class="b-r">lme4</li><li class="b-r">nlme</li><li class="b-r">emmeans</li><li class="b-r">agricolae</li><li class="b-r">tidyverse</li><li class="b-r">ggplot2</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Field work</span><ul class="badges"><li class="b-field">Field experiment setup</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-farmwth">
+            <span class="strand ext">Extension &amp; outreach</span>
+            <span class="proj-main"><span class="proj-title">A historical weather tool for Texas farmers and extension agents</span><span class="proj-result">30 years of daily weather, 1996 to present, in one comparable view</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-farmwth" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides" style="aspect-ratio:1501/798">
+                <figure class="photo"><img src="assets/img/photos/farmwth-dashboard.jpg" alt="The farmwth.com dashboard: season tracker, similar years, next-month forecast and year-by-year views" loading="lazy"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">Extension tool &middot; <a href="https://farmwth.com">farmwth.com</a></p>
+              <dl>
+                <dt>Problem</dt><dd>On-farm decisions need historical trends alongside real-time data, yet historical records sit in complex formats and need processing before any trend becomes clear.</dd>
+                <dt>Approach</dt><dd>Developed a tool (<a href="https://farmwth.com">farmwth.com</a>) that gives farmers and extension agents historical weather for their site in an easy-to-compare form.</dd>
+                <dt>Result</dt><dd>30 years of daily weather, 1996 to present, drawn from gridMET and NASA POWER and served as a season tracker, similar-year comparisons, a next-month outlook and year-by-year views.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Build</span><ul class="badges"><li class="b-py">Next.js</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Data</span><ul class="badges"><li class="b-rs">gridMET</li><li class="b-rs">NASA POWER</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-cotton">
+            <span class="strand model">Modeling</span>
+            <span class="proj-main"><span class="proj-title">Simulating impact of cover crop termination timing on irrigated cotton yield in West Texas using DSSAT</span><span class="proj-result">Simulating the termination window that protects cotton yield without losing the cover crop benefit</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-cotton" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-text">
+              <p class="status">PhD project · ongoing</p>
+              <dl>
+                <dt>Problem</dt><dd>Cover crop termination timing remains a concern for farmers in West Texas, where delayed termination can limit moisture availability for the subsequent cotton crop.</dd>
+                <dt>Approach</dt><dd>Use DSSAT to simulate cover crop termination and cotton planting scenarios, and identify the window that protects cotton yield while securing the benefits of the cover crop.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Simulation model</span><ul class="badges"><li class="b-sim">DSSAT</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Scripting</span><ul class="badges"><li class="b-r">DSSAT R package</li><li class="b-py">DSSATTools</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-tillage">
+            <span class="strand model">Field trials + modeling</span>
+            <span class="proj-main"><span class="proj-title">Understanding the impact of long-term conventional vs conservation tillage on corn yield using DSSAT</span><span class="proj-result">Calibrating DSSAT on long-term trials to compare corn under conventional and conservation tillage</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-tillage" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-text">
+              <p class="status">PhD project · ongoing</p>
+              <dl>
+                <dt>Problem</dt><dd>The long-term effects of conservation tillage on corn yield remain unknown in the southern United States.</dd>
+                <dt>Approach</dt><dd>Calibrate DSSAT with long-term tillage trials to evaluate corn performance and recommend tillage practices suited to the region.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Simulation model</span><ul class="badges"><li class="b-sim">DSSAT</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Statistics</span><ul class="badges"><li class="b-stat">SAS</li><li class="b-stat">JMP</li><li class="b-stat">JASP</li><li class="b-r">lme4</li><li class="b-r">emmeans</li><li class="b-r">ggplot2</li></ul></div>
+            </div>
+          </article>
+        </li>
+      </ol>
+
+      <h3 class="proj-group-title">Past</h3>
+      <ol class="proj-list">
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-meta">
+            <span class="strand field">Meta-analysis</span>
+            <span class="proj-main"><span class="proj-title">Understanding the impact of cover crop and nitrogen rate on corn yield: a meta-analytical study</span><span class="proj-result">Cover crops increased corn yield by 11% and nitrogen content by 22%</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-meta" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-text">
+              <p class="status">MS work · <a href="https://doi.org/10.1007/s13593-025-01067-6">published in <em>Agronomy for Sustainable Development</em>, 2026</a></p>
+              <dl>
+                <dt>Problem</dt><dd>Growers adding cover crops need to know whether to change their nitrogen rates, and published field studies disagree.</dd>
+                <dt>Approach</dt><dd>Pooled results from peer-reviewed U.S. field studies to evaluate how cover crops affect corn yield across soil and management conditions.</dd>
+                <dt>Result</dt><dd>Cover crops increased corn yield by 11% and nitrogen content by 22%.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Statistics</span><ul class="badges"><li class="b-r">metafor</li><li class="b-r">nlme</li><li class="b-r">tidyverse</li><li class="b-r">ggplot2</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-ghg">
+            <span class="strand field">Field trials</span>
+            <span class="proj-main"><span class="proj-title">Estimating greenhouse gas fluxes from corn fields with various cover crop and residue management practices</span><span class="proj-result">CO₂ emissions rose through the season, and cover crop plots emitted more than the control during fallow</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-ghg" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides">
+                <figure class="photo"><img src="assets/img/photos/2-canopy.jpg" alt="Corn rows in a field trial" loading="lazy"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">MS work</p>
+              <dl>
+                <dt>Problem</dt><dd>Cover crops and residue change how much nitrous oxide, methane and carbon dioxide leave the soil, and those fluxes decide whether a practice is climate-smart.</dd>
+                <dt>Approach</dt><dd>Measure greenhouse gas fluxes through the season with static chambers across cover crop and residue management treatments, and analyse them by gas chromatography.</dd>
+                <dt>Result</dt><dd>Carbon dioxide emissions rose through the corn growing season, and cover crop plots emitted more than the control during the fallow period.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Instruments</span><ul class="badges"><li class="b-field">Static chambers</li><li class="b-field">Trace 1300 gas chromatograph</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Statistics</span><ul class="badges"><li class="b-r">lme4</li><li class="b-r">emmeans</li><li class="b-r">agricolae</li><li class="b-r">ggplot2</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Field work</span><ul class="badges"><li class="b-field">Field experiment setup</li></ul></div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <button class="proj-card" type="button" aria-expanded="false" aria-controls="case-cover">
+            <span class="strand field">Field trials</span>
+            <span class="proj-main"><span class="proj-title">Impact of summer cover crops on corn yield and water use efficiency</span><span class="proj-result">Sunn hemp out-yielded sorghum–sudangrass, with no difference in evapotranspiration</span></span>
+            <span class="proj-icon" aria-hidden="true"></span>
+          </button>
+          <article class="case" id="case-cover" hidden>
+            <button class="case-close" type="button" aria-label="Close project"></button>
+            <div class="case-media">
+              <div class="slides">
+                <figure class="photo"><img src="assets/img/photos/soilcores.jpg" alt="Soil cores in labeled sample sleeves" loading="lazy"></figure>
+                <figure class="photo"><img src="assets/img/photos/fielddayaearlymorning.jpg" alt="Early-morning plant height and population datasheet" loading="lazy" style="object-position:50% 45%"></figure>
+              </div>
+            </div>
+            <div class="case-text">
+              <p class="status">MS thesis work · manuscript under review</p>
+              <dl>
+                <dt>Problem</dt><dd>Warm-season cover crops use water between cash crops, which matters in Central Texas where the following corn crop depends on stored soil moisture.</dd>
+                <dt>Approach</dt><dd>Two years of field trials evaluating the feasibility of warm-season cover crops following corn, and their impact on corn yield and water use efficiency.</dd>
+                <dt>Result</dt><dd>Sunn hemp plots produced higher corn grain and biomass than sorghum–sudangrass. Both cover crops carried minimal penalties in the tradeoff analysis, with no difference in evapotranspiration.</dd>
+              </dl>
+            </div>
+            <div class="toolkit">
+              <div class="tool-group"><span class="tool-label">Instruments</span><ul class="badges"><li class="b-field">Stevens soil moisture sensors</li><li class="b-field">Geoprobe MC5</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Statistics</span><ul class="badges"><li class="b-r">lme4</li><li class="b-r">nlme</li><li class="b-r">emmeans</li><li class="b-r">ggplot2</li></ul></div>
+              <div class="tool-group"><span class="tool-label">Field work</span><ul class="badges"><li class="b-field">Field experiment setup</li></ul></div>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="section" id="experience" data-nav data-label="Experience">
+  <div class="wrap">
+    <h2 class="label">Experience</h2>
+    <ol class="xp">
+      <li>
+        <span class="when">May 2022 – now</span>
+        <div>
+          <h3>Graduate Research Assistant</h3>
+          <span class="org">Blackland Research &amp; Extension Center, Texas A&amp;M AgriLife Research · Temple, TX</span>
+          <ul>
+            <li>Run three multi-year field studies of 24&ndash;80 plots across four seasons, leading a crew of five and managing treatment application and in-season sampling</li>
+            <li>Fly UAV LiDAR and hyperspectral missions &mdash; 12&ndash;15 flights across two seasons over 2+ acre research fields &mdash; and collect eddy covariance and ground-based measurements</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Fall 2024, Fall 2025</span>
+        <div>
+          <h3>Graduate Teaching Assistant, Introduction to Soil Science</h3>
+          <span class="org">Department of Soil and Crop Sciences, Texas A&amp;M University · College Station, TX</span>
+          <ul><li>Taught lab sessions and field visits for more than 100 undergraduates, prepared instructional materials and graded coursework</li></ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Sep – Dec 2021</span>
+        <div>
+          <h3>Student Worker</h3>
+          <span class="org">Department of Soil Science, Punjab Agricultural University · Ludhiana, India</span>
+          <ul><li>Assessed nano nitrogen and zinc fertilizers in rice–wheat systems, and lead accumulation in rice</li></ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Jun 2018 – Mar 2019</span>
+        <div>
+          <h3>Agronomy Intern, Practical Crop Production</h3>
+          <span class="org">Department of Agronomy, Punjab Agricultural University · Ludhiana, India</span>
+          <ul><li>Grew corn and mustard, and scouted fields for crop establishment, disease and pest infestation</li></ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section class="section" id="publications" data-nav data-label="Publications">
+  <div class="wrap">
+    <h2 class="label">Publications</h2>
+    <ol class="pub-list">
+      <li class="pub">
+        <div class="pub-meta"><span class="badge published">Journal article</span><span class="pub-year">2026</span></div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1007/s13593-025-01067-6">Corn responses to nitrogen fertilization as influenced by cover cropping: A meta-analysis</a></h3>
+        <p class="authors"><span class="me">Juneja, P.</span>, Baath, G. S., Brar, J. S., Flynn, K. C., Yost, J. L., &amp; Rajan, N.</p>
+        <p class="venue"><em>Agronomy for Sustainable Development</em>, 46(1), 3</p>
+        <div class="pub-actions">
+          <button class="pub-btn" type="button" data-cite aria-expanded="false" aria-controls="cite-1">Cite</button>
+        </div>
+        <div class="cite-box" id="cite-1" hidden>
+          <div class="cite-row"><span class="cite-label">APA</span><p class="cite-text">Juneja, P., Baath, G. S., Brar, J. S., Flynn, K. C., Yost, J. L., &amp; Rajan, N. (2026). Corn responses to nitrogen fertilization as influenced by cover cropping: A meta-analysis. Agronomy for Sustainable Development, 46(1), 3. https://doi.org/10.1007/s13593-025-01067-6</p><button class="cite-copy" type="button">Copy</button></div>
+          <div class="cite-row"><span class="cite-label">BibTeX</span><pre class="cite-text">@article{juneja2026corn,
+  title   = {Corn responses to nitrogen fertilization as influenced by cover cropping: A meta-analysis},
+  author  = {Juneja, Pulkit and Baath, Gurjinder S. and Brar, Jaiveer S. and Flynn, K. Colton and Yost, Jenifer L. and Rajan, Nithya},
+  journal = {Agronomy for Sustainable Development},
+  volume  = {46},
+  number  = {1},
+  pages   = {3},
+  year    = {2026},
+  doi     = {10.1007/s13593-025-01067-6}
+}</pre><button class="cite-copy" type="button">Copy</button></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-meta"><span class="badge published">Journal article</span><span class="pub-year">2025</span></div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1016/j.scitotenv.2025.180836">Impacts of dairy manure and synthetic fertilizers on greenhouse gas emissions and crop yields: A global meta-analytical comparison</a></h3>
+        <p class="authors">Brar, J. S., Baath, G. S., <span class="me">Juneja, P.</span>, Jeong, J., Yost, J. L., Flynn, K. C., &amp; Wyatt, B. M.</p>
+        <p class="venue"><em>Science of the Total Environment</em>, 1005, 180836</p>
+        <div class="pub-actions">
+          <button class="pub-btn" type="button" data-cite aria-expanded="false" aria-controls="cite-2">Cite</button>
+        </div>
+        <div class="cite-box" id="cite-2" hidden>
+          <div class="cite-row"><span class="cite-label">APA</span><p class="cite-text">Brar, J. S., Baath, G. S., Juneja, P., Jeong, J., Yost, J. L., Flynn, K. C., &amp; Wyatt, B. M. (2025). Impacts of dairy manure and synthetic fertilizers on greenhouse gas emissions and crop yields: A global meta-analytical comparison. Science of the Total Environment, 1005, 180836. https://doi.org/10.1016/j.scitotenv.2025.180836</p><button class="cite-copy" type="button">Copy</button></div>
+          <div class="cite-row"><span class="cite-label">BibTeX</span><pre class="cite-text">@article{brar2025impacts,
+  title   = {Impacts of dairy manure and synthetic fertilizers on greenhouse gas emissions and crop yields: A global meta-analytical comparison},
+  author  = {Brar, Jaiveer S. and Baath, Gurjinder S. and Juneja, Pulkit and Jeong, Jaehak and Yost, Jenifer L. and Flynn, K. Colton and Wyatt, Briana M.},
+  journal = {Science of the Total Environment},
+  volume  = {1005},
+  pages   = {180836},
+  year    = {2025},
+  doi     = {10.1016/j.scitotenv.2025.180836}
+}</pre><button class="cite-copy" type="button">Copy</button></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-meta"><span class="badge published">Book chapter</span><span class="pub-year">2024</span></div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1002/9781394214426.ch16">Drone mapping for agricultural sustainability</a></h3>
+        <p class="authors">Bawa, A., Baath, G., <span class="me">Juneja, P.</span>, &amp; Brar, J.</p>
+        <p class="venue">In <em>Sustainable Development Using Geospatial Techniques</em> (pp. 411–436). Wiley</p>
+        <div class="pub-actions">
+          <button class="pub-btn" type="button" data-cite aria-expanded="false" aria-controls="cite-3">Cite</button>
+        </div>
+        <div class="cite-box" id="cite-3" hidden>
+          <div class="cite-row"><span class="cite-label">APA</span><p class="cite-text">Bawa, A., Baath, G., Juneja, P., &amp; Brar, J. (2024). Drone mapping for agricultural sustainability. In D. Thakur, S. Kumar, H. A. S. Sandhu, &amp; C. Prakash (Eds.), Sustainable development using geospatial techniques (pp. 411–436). Wiley. https://doi.org/10.1002/9781394214426.ch16</p><button class="cite-copy" type="button">Copy</button></div>
+          <div class="cite-row"><span class="cite-label">BibTeX</span><pre class="cite-text">@incollection{bawa2024drone,
+  title     = {Drone Mapping for Agricultural Sustainability},
+  author    = {Bawa, Arun and Baath, Gurjinder and Juneja, Pulkit and Brar, Jaiveer},
+  booktitle = {Sustainable Development Using Geospatial Techniques},
+  editor    = {Thakur, Disha and Kumar, Sanjay and Sandhu, Har Amrit Singh and Prakash, Chander},
+  pages     = {411--436},
+  publisher = {Wiley},
+  year      = {2024},
+  doi       = {10.1002/9781394214426.ch16}
+}</pre><button class="cite-copy" type="button">Copy</button></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-meta"><span class="badge review">Under review</span></div>
+        <h3 class="pub-title">Exploring the potential of warm-season cover crops and nitrogen management for improving corn yield and water use efficiency</h3>
+        <p class="authors"><span class="me">Juneja, P.</span>, Baath, G. S., Brar, J. S., Yost, J. L., Flynn, K. C., &amp; Rajan, N.</p>
+        <p class="venue"><em>Agrosystems, Geosciences &amp; Environment</em></p>
+      </li>
+      <li class="pub">
+        <div class="pub-meta"><span class="badge review">Under review</span></div>
+        <h3 class="pub-title">UAV LiDAR voxelization enhances estimation of crop LAI across flight altitudes</h3>
+        <p class="authors">Flynn, K. C., Baath, G. S., Kolodziejczyk, C., <span class="me">Juneja, P.</span>, Sapkota, B. R., Hajda, C., &amp; Smith, D.</p>
+        <p class="venue"><em>Computers and Electronics in Agriculture</em></p>
+      </li>
+      <li class="pub">
+        <div class="pub-meta"><span class="badge prep">In preparation</span></div>
+        <h3 class="pub-title">Integrating hyperspectral and LiDAR for corn leaf area index estimation and cross-field generalization</h3>
+        <p class="authors"><span class="me">Juneja, P.</span>, Baath, G. S., Flynn, K. C., Kolodziejczyk, C., Sapkota, B. R., &amp; Brar, J. S.</p>
+        <p class="venue">For <em>Remote Sensing of Environment</em></p>
+      </li>
+    </ol>
+
+    <h3 class="talks-title">Talks &amp; posters</h3>
+    <details class="talk-group">
+      <summary>Oral presentations <span class="count">4</span></summary>
+      <ol class="talk-list">
+        <li><span class="talk-meta">CANVAS 2025 · Salt Lake City, UT</span><span class="talk-title">Integrating LiDAR and hyperspectral data with machine learning for corn leaf area index estimation</span></li>
+        <li><span class="talk-meta">CANVAS 2025 · Salt Lake City, UT</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168233">Evaluating the influence of living mulch and nitrogen rate on corn performance in the southern United States</a></li>
+        <li><span class="talk-meta">ASA-CSSA-SSSA 2024 · San Antonio, TX</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2024am/meetingapp.cgi/Paper/159563">A meta-analysis to understand the combined effect of cover cropping and nitrogen fertilization on corn yield in the U.S.</a></li>
+        <li><span class="talk-meta">ASA-CSSA-SSSA 2023 · St. Louis, MO</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2023am/meetingapp.cgi/Paper/149891">Impact of cover crop management on greenhouse gas fluxes in corn production systems</a></li>
+      </ol>
+    </details>
+    <details class="talk-group">
+      <summary>Posters <span class="count">5</span></summary>
+      <ol class="talk-list">
+        <li><span class="talk-meta">ASA-CSSA-SSSA 2024 · San Antonio, TX</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2024am/meetingapp.cgi/Paper/159799">Corn yield response and water use efficiency following warm-season cover crops in Central Texas</a></li>
+        <li><span class="talk-meta">ASA-CSSA-SSSA 2024 · San Antonio, TX</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2024am/meetingapp.cgi/Paper/159762">Greenhouse gas emissions from corn field as influenced by cover crop management</a></li>
+        <li><span class="talk-meta">ASA-CSSA-SSSA 2023 · St. Louis, MO</span><a class="talk-title" href="https://scisoc.confex.com/scisoc/2023am/meetingapp.cgi/Paper/149973">Performance and water use efficiency of rainfed cover crop–corn production systems in Central Texas</a></li>
+        <li><span class="talk-meta">Corteva DELTA Symposium 2023 · Indianapolis, IN</span><span class="talk-title">Estimation of cover crop biomass using crop biophysical parameters</span></li>
+        <li><span class="talk-meta">TAMU Plant Breeding Symposium 2023 · College Station, TX</span><span class="talk-title">Influence of water stress on performance of three warm-season legume species</span></li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ===================== RECOGNITION ===================== -->
+<section class="section" id="recognition" data-nav data-label="Recognition">
+  <div class="wrap">
+    <h2 class="label">Recognition</h2>
+    <div class="two">
+      <div>
+        <h3 class="sub-label">Awards &amp; honors</h3>
+        <ul class="rlist">
+          <li><b>2nd Place, Student Oral Presentation</b><span>Airborne &amp; Satellite Remote Sensing · CANVAS 2025</span></li>
+          <li><b>Bayer for University (B4U) Mentee</b><span>Paired with a Bayer Crop Science scientist · 2025–26</span></li>
+          <li><b>Graduate Student Leadership Conference</b><span>Selected attendee · CANVAS 2025</span></li>
+          <li><b>1st Place, Student Poster</b><span>Semi-Arid Dryland Cropping Systems · ASA-CSSA-SSSA 2024</span></li>
+          <li><b>Corteva DELTA Scholar</b><span>Corteva Agriscience · 2023</span></li>
+          <li><b>2nd Place, Student Poster</b><span>Global Climate Change Community · ASA-CSSA-SSSA 2023</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub-label">Leadership &amp; service</h3>
+        <ul class="rlist">
+          <li><b>Graduate Senator, Soil &amp; Crop Sciences</b><span>Graduate and Professional Student Government, Texas A&amp;M University · 2025–26</span></li>
+          <li><b>Graduate Student Ambassador</b><span>Department of Soil and Crop Sciences · 2025–26</span></li>
+          <li><b>Internal Programs Coordinator</b><span>International Student Association, Texas A&amp;M University · 2025–26</span></li>
+          <li><b>Peer Reviewer</b><span><em>Agronomy Journal</em> (3) · <em>Urban Agriculture &amp; Regional Food Systems</em> (1)</span></li>
+          <li><b>Session Moderator &amp; Judge</b><span>ASA-CSSA-SSSA 2024 · CANVAS 2025</span></li>
+          <li><b>State Secretary</b><span>All India Agricultural Students Association · 2022</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== JOURNEY ===================== -->
+<section class="section" id="journey" data-nav data-label="Journey">
+  <div class="wrap">
+    <h2 class="label">Journey</h2>
+    <div class="journey">
+      <div class="journey-map">
+        <div class="stage"><canvas id="map" aria-label="World map of places in Pulkit's journey; select a place to jump to its chapter"></canvas></div>
+      </div>
+      <div class="chapters" id="chapters">
+        <article class="chapter" data-type="home" data-lon="75.85" data-lat="30.9" data-zoom="7" data-place="Ludhiana, Punjab" data-key="ludhiana">
+          <span class="where">Ludhiana, India · 2017–2021</span>
+          <h3>Where it started</h3>
+          <p>Punjab Agricultural University, in the heart of India's rice–wheat belt.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/punjabagriculturaluniversity.jpg" alt="Main gate of Punjab Agricultural University" loading="lazy"></figure></div>
+        </article>
+        <article class="chapter" data-type="home" data-lon="-97.34" data-lat="31.1" data-zoom="9" data-place="Temple, Texas" data-key="temple">
+          <span class="where">Temple, Texas · 2022–now</span>
+          <h3>Blackland Research &amp; Extension Center</h3>
+          <p>Home base for my field trials, flux tower and drone flights.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/templegrphoto.jpg" alt="Group photo at the Blackland Research and Extension Center" loading="lazy"></figure></div>
+        </article>
+        <article class="chapter" data-type="home" data-lon="-96.33" data-lat="30.63" data-zoom="9" data-place="College Station, Texas" data-key="cstat">
+          <span class="where">College Station, Texas · 2022–now</span>
+          <h3>Texas A&amp;M University</h3>
+          <p>Graduate school, teaching and student government.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/collegestation.jpg" alt="Pulkit with undergraduate students in a soil science lab" loading="lazy" style="object-position:50% 30%"></figure></div>
+        </article>
+        <article class="chapter" data-type="trip" data-lon="-90.2" data-lat="38.63" data-zoom="6" data-place="St. Louis, Missouri" data-key="stl">
+          <span class="where">St. Louis · 2023</span>
+          <h3>First national meeting</h3>
+          <p>Presented at the ASA-CSSA-SSSA Annual Meeting.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/stlouis.jpg" alt="Pulkit with colleagues on the way to St. Louis" loading="lazy"></figure></div>
+        </article>
+        <article class="chapter" data-type="trip" data-lon="-86.16" data-lat="39.77" data-zoom="6" data-place="Indianapolis, Indiana" data-key="indy">
+          <span class="where">Indianapolis · 2023</span>
+          <h3>Corteva DELTA Scholar</h3>
+          <p>Presented research at Corteva Agriscience headquarters.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/cortevavisit.jpg" alt="Pulkit at Corteva Agriscience headquarters" loading="lazy" style="object-position:50% 20%"></figure></div>
+        </article>
+        <article class="chapter" data-type="trip" data-lon="-98.49" data-lat="29.42" data-zoom="6" data-place="San Antonio, Texas" data-key="sat">
+          <span class="where">San Antonio · 2024</span>
+          <h3>First place</h3>
+          <p>Top student poster in Semi-Arid Dryland Cropping Systems at the ASA-CSSA-SSSA Annual Meeting.</p>
+          <div class="slides">
+            <figure class="photo"><img src="assets/img/photos/sanantonio-2.jpg" alt="Pulkit presenting a research poster in San Antonio" loading="lazy" style="object-position:50% 45%"></figure>
+            <figure class="photo"><img src="assets/img/photos/sanantonio.jpg" alt="Pulkit with colleagues at the ASA, CSSA, SSSA Annual Meeting" loading="lazy" style="object-position:50% 50%"></figure>
+          </div>
+        </article>
+        <article class="chapter" data-type="trip" data-lon="-111.89" data-lat="40.76" data-zoom="6" data-place="Salt Lake City, Utah" data-key="slc">
+          <span class="where">Salt Lake City · 2025</span>
+          <h3>CANVAS 2025</h3>
+          <p>Placed second in the student oral presentation, Airborne &amp; Satellite Remote Sensing community.</p>
+          <div class="slides"><figure class="photo"><img src="assets/img/photos/saltlakecity.jpg" alt="Pulkit presenting living mulch research at CANVAS 2025" loading="lazy"></figure></div>
+        </article>
+        <article class="chapter" data-type="trip" data-lon="-78.68" data-lat="35.78" data-zoom="6" data-place="Raleigh, North Carolina" data-key="raleigh">
+          <span class="where">Raleigh · April 2026</span>
+          <h3>AI in Agriculture</h3>
+          <p>Poster presentation.</p>
+          <div class="slides">
+            <figure class="photo"><img src="assets/img/photos/aiinag-conference-ncstate-april2026.jpg" alt="Pulkit at the 2026 AI in Agriculture event at NC State" loading="lazy" style="object-position:50% 35%"></figure>
+            <figure class="photo"><img src="assets/img/photos/aiinag2026.jpg" alt="Pulkit with the NC State mascots at the AI in Agriculture conference" loading="lazy" style="object-position:50% 30%"></figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact" data-nav data-label="Contact">
+  <div class="wrap">
+    <h2>Want to talk about phenotyping, crop modeling, field trials, or sustainable agriculture?</h2>
+    <button class="btn" type="button" id="connect" aria-expanded="false" aria-controls="contact-row">Let's connect</button>
+    <ul class="hero-links" id="contact-row" hidden>
+      <li><a href="mailto:pulkit.juneja@tamu.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/pulkit-juneja">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=x8ZD-0EAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0001-9248-0934">ORCID</a></li>
+      <li><a href="https://github.com/pulkitjuneja-23">GitHub</a></li>
+    </ul>
+  </div>
+  <footer class="wrap">© <span id="year">2026</span> Pulkit Juneja · Map data: Natural Earth</footer>
+</section>
+
+<script src="assets/data/world-dots.js" defer></script>
+<script src="assets/js/common.js" defer></script>
+<script src="assets/js/tillage.js" defer></script>
+<script src="assets/js/slides.js" defer></script>
+<script src="assets/js/levels.js" defer></script>
+<script src="assets/js/projects.js" defer></script>
+<script src="assets/js/journey.js" defer></script>
+<script src="assets/js/cite.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
