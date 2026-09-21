@@ -1,7 +1,6 @@
 /* Pulkit Juneja — personal site
-   One sans-serif family (IBM Plex Sans) for everything; monospace only inside the BibTeX code box.
-   One page background throughout (no alternating bands) so no section reads as a stray light strip;
-   white panels and the dark stats/contact bands carry the rhythm instead. */
+   One sans-serif family (IBM Plex Sans) throughout; monospace only in the BibTeX box.
+   One page background: the white panels and dark bands carry the rhythm. */
 
 :root {
   --ground: #eef2ee; --panel: #ffffff; --ink: #15201a; --muted: #55635a; --rule: #d3dcd5;
@@ -91,7 +90,6 @@ a:hover { color: var(--cir); }
 .tagline { font-weight: 500; font-size: clamp(1.02rem, 1.4vw, 1.25rem); line-height: 1.45; margin: 14px 0 12px; max-width: 42ch; text-wrap: balance; }
 .hero .loc { display: flex; align-items: center; gap: 7px; margin: 0 0 10px; font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; opacity: .85; }
 .hero .loc svg { flex: none; }
-/* who has already vetted him, read in the first screen */
 .hero .creds { margin: 0 0 8px; font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; opacity: .85; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none; margin: 0; padding: 0; }
 .hero-links a { font-size: .74rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; opacity: .9; }
