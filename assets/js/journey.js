@@ -18,6 +18,7 @@
   const hub = places.find(p => p.key === "temple") || places[0];
   const cam = { lon: chapters[0].lon, lat: chapters[0].lat, zoom: chapters[0].zoom };
   let active = -1, onScreen = false, pulse = 0, hit = [];
+  let navPlace = null, navBtns = [];
 
   const view = fitCanvas(canvas, (c, w, h) => {
     c.fillStyle = C.stage; c.fillRect(0, 0, w, h);
@@ -74,7 +75,13 @@
     }
   });
 
-  function setActive(i) { if (i !== active) { active = i; markActive(cards, i); } }
+  function setActive(i) {
+    if (i === active) return;
+    active = i;
+    markActive(cards, i);
+    if (navPlace) navPlace.textContent = chapters[i].place;
+    navBtns.forEach((b, k) => { b.disabled = k === 0 ? i <= 0 : i >= cards.length - 1; });
+  }
 
   // Only one card shows its photos at a time.
   function setOpen(i, force) {
@@ -87,12 +94,31 @@
     });
   }
 
-  function goTo(i) {
-    setActive(i); setOpen(i, true);
+  function bringIntoView(i) {
     const card = cards[i], behavior = REDUCED_MOTION ? "auto" : "smooth";
     if (narrow.matches) list.scrollTo({ left: card.offsetLeft - (list.clientWidth - card.clientWidth) / 2, behavior });
     else requestAnimationFrame(() => card.scrollIntoView({ block: "center", behavior }));
   }
+
+  function goTo(i) { setActive(i); setOpen(i, true); bringIntoView(i); }
+
+  // Phone controls: swiping the cards sideways moves the map, but nothing on screen says so.
+  const nav = document.createElement("div");
+  nav.className = "map-nav";
+  const chevron = back => `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" `
+    + `stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="${back ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7"}"/></svg>`;
+  nav.innerHTML = `<button type="button" aria-label="Previous place">${chevron(true)}</button>`
+    + `<span class="map-nav-place"></span>`
+    + `<button type="button" aria-label="Next place">${chevron(false)}</button>`;
+  canvas.closest(".journey-map").after(nav);
+  navPlace = nav.querySelector(".map-nav-place");
+  navBtns = [...nav.querySelectorAll("button")];
+  navPlace.textContent = chapters[0].place;
+  navBtns[0].disabled = true;
+  navBtns.forEach((b, k) => b.addEventListener("click", () => {
+    const i = Math.max(0, Math.min(cards.length - 1, (active < 0 ? 0 : active) + (k === 0 ? -1 : 1)));
+    setActive(i); bringIntoView(i);
+  }));
 
   cards.forEach((card, i) => {
     if (!card.querySelector(".slides")) return;

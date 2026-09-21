@@ -9,6 +9,7 @@
   const frames = [...root.querySelectorAll(".levels-frames .photo")];
   const caps = [...root.querySelectorAll(".lv-cap")];
   const tabs = [...root.querySelectorAll(".levels-gauge button")];
+  const gauge = root.querySelector(".levels-gauge");
   let index = 0, auto = !REDUCED, visibleRatio = 0, timer = null;
 
   function set(i, focus = false) {
@@ -17,13 +18,18 @@
     caps.forEach((c, k) => { c.hidden = k !== index; });
     tabs.forEach((t, k) => { t.setAttribute("aria-selected", String(k === index)); t.tabIndex = k === index ? 0 : -1; });
     root.style.setProperty("--level", index / (tabs.length - 1));
+    // on a phone the gauge is a sideways strip, so keep the current label on screen
+    if (gauge.scrollWidth > gauge.clientWidth + 4) {
+      const t = tabs[index];
+      gauge.scrollTo({ left: t.offsetLeft - (gauge.clientWidth - t.clientWidth) / 2, behavior: REDUCED ? "auto" : "smooth" });
+    }
     if (focus) tabs[index].focus();
   }
   const stopAuto = () => { auto = false; clearInterval(timer); };
   function run() { clearInterval(timer); timer = setInterval(() => { if (!document.hidden) set((index + 1) % tabs.length); }, 8000); }
 
   tabs.forEach((t, k) => t.addEventListener("click", () => { stopAuto(); set(k); }));
-  root.querySelector(".levels-gauge").addEventListener("keydown", e => {
+  gauge.addEventListener("keydown", e => {
     const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
     if (!step) return;
     e.preventDefault(); stopAuto(); set(index + step, true);
@@ -45,7 +51,9 @@
 
   // Touch: swipe left/right on the photo.
   let touchX = null;
-  root.addEventListener("touchstart", e => { touchX = e.touches[0].clientX; }, { passive: true });
+  root.addEventListener("touchstart", e => {
+    touchX = e.target.closest(".levels-gauge") ? null : e.touches[0].clientX;
+  }, { passive: true });
   root.addEventListener("touchend", e => {
     if (touchX === null) return;
     const dx = e.changedTouches[0].clientX - touchX;
