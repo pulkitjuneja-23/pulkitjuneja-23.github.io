@@ -160,7 +160,7 @@ a:hover { color: var(--cir); }
 @media (max-width: 760px) { .schools { grid-template-columns: minmax(0, 1fr); } }
 
 /* ---------- projects: showcase ---------- */
-.levels { position: relative; aspect-ratio: 21 / 9; min-height: 400px; max-height: 620px; max-width: 100%; border-radius: 16px; overflow: hidden; background: var(--stage); color: #f3f6ef; margin-bottom: clamp(24px, 3vw, 40px); }
+.levels { position: relative; aspect-ratio: 21 / 9; min-height: 400px; max-height: 620px; max-width: 100%; border-radius: 16px; overflow: hidden; background: var(--stage); color: #f3f6ef; margin-top: clamp(24px, 3vw, 40px); }
 .levels-frames .photo { position: absolute; inset: 0; border-radius: 0; opacity: 0; transform: scale(1.04); transition: opacity .8s ease, transform 8s ease-out; }
 .levels-frames .photo.active { opacity: 1; transform: none; }
 .levels-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgb(8 12 9 / .78) 0%, rgb(8 12 9 / .4) 36%, rgb(8 12 9 / 0) 62%), linear-gradient(0deg, rgb(8 12 9 / .65) 0%, rgb(8 12 9 / 0) 48%); }
@@ -379,7 +379,7 @@ a.talk-title:hover { text-decoration: underline; text-decoration-color: var(--ci
 .section { padding-block: clamp(22px, 2.4vw, 36px); }
 .label { margin-bottom: clamp(12px, 1.4vw, 18px); }
 .stats-band { padding-block: 18px; }
-.levels { margin-bottom: clamp(16px, 2vw, 26px); }
+.levels { margin-top: clamp(16px, 2vw, 26px); }
 .proj-group-title + .proj-list { margin-bottom: 16px; }
 .case { margin: 6px 0 2px; }
 .xp > li { padding: 12px 16px; }
