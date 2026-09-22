@@ -132,6 +132,10 @@ a:hover { color: var(--cir); }
 /* ---------- photo frames ---------- */
 .photo { position: relative; margin: 0; overflow: hidden; border-radius: 10px; background: linear-gradient(135deg, color-mix(in srgb, var(--leaf) 22%, var(--panel)), color-mix(in srgb, var(--soil) 26%, var(--panel))); }
 .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* a linked photo: the anchor has to fill the frame or the image loses its height */
+.photo > a { display: block; height: 100%; }
+.photo > a img { transition: filter .25s; }
+.photo > a:hover img { filter: brightness(1.07); }
 .photo.empty img { visibility: hidden; }
 .photo.empty::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg, transparent 0 14px, color-mix(in srgb, var(--ink) 6%, transparent) 14px 15px); }
 .photo.fit .bg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; filter: blur(26px) brightness(.5); }
