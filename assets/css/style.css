@@ -38,7 +38,7 @@ a:hover { color: var(--cir); }
 .wrap { max-width: 1400px; margin-inline: auto; padding-inline: var(--gutter); }
 @media (min-width: 761px) { .wrap { padding-right: calc(var(--gutter) + 40px); } }
 
-.eyebrow, .where, .when, .strand, .status, .badge, .pub-year, .talk-meta, .cite-label, .tool-label, .sub-label, .case dt, .topnav a, .top-cta, .hero-links a, .lv-cap a, .levels-gauge button, .rail-mark span, .proj-group-title {
+.eyebrow, .where, .when, .strand, .status, .badge, .pub-year, .talk-meta, .cite-label, .tool-label, .sub-label, .case dt, .topnav a, .top-cta, .cv-btn, .hero-links a, .lv-cap a, .levels-gauge button, .rail-mark span, .proj-group-title {
   text-transform: uppercase; letter-spacing: .08em;
 }
 
@@ -55,6 +55,11 @@ a:hover { color: var(--cir); }
 .topnav a.active { opacity: 1; box-shadow: inset 0 -2px 0 var(--cir); }
 .top-cta { font-size: .72rem; font-weight: 600; padding: 8px 16px; border: 1px solid currentColor; border-radius: 99px; text-decoration: none; }
 .top-cta:hover { background: var(--cir); border-color: var(--cir); color: #fff; }
+/* CV download: the same pill as the top bar button */
+.cv-btn { display: inline-block; padding: 8px 16px; border: 1px solid currentColor; border-radius: 99px; text-decoration: none; }
+.cv-btn:hover { background: var(--cir); border-color: var(--cir); color: #fff; }
+.hero-links a.cv-btn { padding: 8px 16px; opacity: 1; }
+.contact .cv-btn { margin-left: 14px; vertical-align: middle; }
 @media (max-width: 1100px) { .topnav { display: none; } .top-cta { margin-left: auto; } }
 
 /* ---------- scroll progress rail ---------- */
