@@ -331,6 +331,7 @@ a:hover { color: var(--cir); }
 .badge { display: inline-flex; align-items: center; font-size: .68rem; font-weight: 600; line-height: 1; padding: 6.2px calc(9px - .08em) 4.8px 9px; border-radius: 3px; border: 1px solid currentColor; }
 /* "published" not "pub": .pub is the publication list item, and the names would collide */
 .badge.published { color: var(--leaf); } .badge.review { color: var(--soil); } .badge.prep { color: var(--muted); }
+.badge.accepted { color: var(--leaf); }
 .pub-year { font-size: .78rem; font-weight: 500; color: var(--muted); }
 .pub-title { font-weight: 600; font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.35; margin: 0 0 6px; text-wrap: pretty; }
 .pub-title a { text-decoration: none; }
